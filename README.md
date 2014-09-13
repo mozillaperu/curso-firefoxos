@@ -1,0 +1,4 @@
+curso-firefoxos
+===============
+
+Aplicaciones

@@ -2,6 +2,7 @@
   "name": "Curso",
   "description": "Ejemplos de curso de Firefox OS",
   "launch_path": "/index.html",
+  "version": "0.1",
   "icons": {
     "512": "/icons/icon-512.png",
     "128": "/icons/icon-128.png",

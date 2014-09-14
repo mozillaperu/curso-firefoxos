@@ -1,0 +1,20 @@
+{
+  "name": "Curso",
+  "description": "Ejemplos de curso de Firefox OS",
+  "launch_path": "/index.html",
+  "icons": {
+    "512": "/icons/icon-512.png",
+    "128": "/icons/icon-128.png",
+    "60": "/icons/icon-60.png"
+  },
+  "developer": {
+    "name": "Mozilla Perú",
+    "url": "http://mozilla.pe/"
+  },
+  "default_locale": "es",
+  "permissions": {
+    "geolocation": {
+      "description": "geolocation"
+    }
+  }
+}

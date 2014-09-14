@@ -1,6 +1,6 @@
 {
   "name": "Curso",
-  "description": "Ejemplos de curso de Firefox OS",
+  "description": "Ejemplos para el curso de Firefox OS",
   "launch_path": "/index.html",
   "version": "0.1",
   "icons": {

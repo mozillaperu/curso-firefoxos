@@ -1,8 +1,8 @@
 {
-  "name": "Curso",
+  "name": "Curso de Firefox OS",
   "description": "Ejemplos para el curso de Firefox OS",
   "launch_path": "/index.html",
-  "version": "0.1",
+  "version": "0.2",
   "icons": {
     "512": "/icons/icon-512.png",
     "128": "/icons/icon-128.png",
@@ -17,5 +17,8 @@
     "geolocation": {
       "description": "geolocation"
     }
+  },
+  "chrome": {
+    "navigation": true
   }
 }

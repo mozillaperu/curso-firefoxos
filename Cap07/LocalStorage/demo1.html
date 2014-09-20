@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <meta charset="utf-8">
+  </head>
+  <body>
+    <div>
+        <label>Nombre</label><input type="text" id="nombre_input">
+    </div>
+    <div>
+        <button onclick="javascript:guardar()">Guardar</button>    
+        <button onclick="javascript:mostrar()">Mostrar</button>    
+        <button onclick="javascript:eliminar()">Limpiar</button>  
+    </div>
+    <p>Nombre: <span id="nombre_span"></span></p>
+    <script>
+        function guardar(){
+            nombre = document.getElementById("nombre_input").value
+            localStorage.setItem('nombre', nombre);
+        }
+        
+        function mostrar(){
+            if( localStorage.nombre ){
+                nombre = localStorage.getItem('nombre');
+                document.getElementById("nombre_span").innerHTML = nombre
+            }else{
+                document.getElementById("nombre_span").innerHTML = "esta vacio"
+            }
+            
+        }
+        
+        function eliminar(){
+            localStorage.clear()
+            //localStorage.removeItem('nombre')
+        }
+    </script>
+  </body>
+</html>

@@ -15,7 +15,10 @@
   "default_locale": "es",
   "permissions": {
     "geolocation": {
-      "description": "geolocation"
+      "description": "Geolocation"
+    },
+    "desktop-notification":{
+      "description": "Notifications"
     }
   },
   "chrome": {

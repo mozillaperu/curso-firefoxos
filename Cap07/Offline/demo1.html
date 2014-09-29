@@ -1,25 +1,39 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <title>Curso de Firefox OS | Mozilla Perú - Devcode.la</title>
+        <link href="../../css/headers.css" rel="stylesheet" type="text/css">
+        <link href="../../css/lists.css" rel="stylesheet" type="text/css">
+        <link href="../../css/util.css" rel="stylesheet" type="text/css">
+        <link href="../../css/fonts.css" rel="stylesheet" type="text/css">
         <meta charset="utf-8">
-        <title>probando conexion</title>
     </head>
 
     <body onload="init();">
 
-    <div>Estado: <span id="status"></span></div>
-    <script type="text/javascript" language="javascript">
-        function update() {
-            elt = document.getElementById("status");
-            cuerpo = document.getElementsByTagName("body")[0];
+        <section role="region" id="input-areas" data-position="right">
+            <header class="fixed">
+                <a id="btn-input-areas-back" href="../../index.html"><span class="icon icon-back">back</span></a>
+                <h1>Offline Web Apps</h1>
+            </header>
+            <article class="content scrollable header">
+                <p>Estado: <span id="status"></span></p>
+            </article>
+        </section>       
+    
+        <script type="text/javascript" language="javascript">
+            function update() {
+                elt = document.getElementById("status");
+                cuerpo = document.getElementsByTagName("body")[0];
+                
+                elt.innerHTML = (navigator.onLine ? "Online" : "Offline");
+                cuerpo.style.backgroundColor = (navigator.onLine ? "#B8E3C8" : "#E3B8D3");
+            }
             
-            elt.innerHTML = (navigator.onLine ? "Online" : "Offline");
-            cuerpo.style.backgroundColor = (navigator.onLine ? "#B8E3C8" : "#E3B8D3");
-        }
-        
-        function init() {
-                setInterval("update()", 500);
-        }
-    </script>
+            function init() {
+                    setInterval("update()", 500);
+            }
+        </script>
+
     </body>
 </html>

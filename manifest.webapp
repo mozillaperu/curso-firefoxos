@@ -19,9 +19,14 @@
     },
     "desktop-notification":{
       "description": "Notifications"
+    },
+    "contacts":{
+      "description": "See all contacts",
+      "access": "readwrite"
     }
   },
   "chrome": {
     "navigation": true
-  }
+  },
+  "type": "privileged"
 }

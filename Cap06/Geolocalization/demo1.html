@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Curso de Firefox OS | Mozilla Perú - Devcode.la</title>
+        <link href="../../css/headers.css" rel="stylesheet" type="text/css">
+        <link href="../../css/lists.css" rel="stylesheet" type="text/css">
+        <link href="../../css/util.css" rel="stylesheet" type="text/css">
+        <link href="../../css/fonts.css" rel="stylesheet" type="text/css">
         <meta charset="utf-8">
         <style>
             #contenedor{
@@ -8,33 +13,33 @@
                 padding: 10px;
                 margin: 10px 0;
             }
-
-            p{
-                color: #222;
-                font: 14px Arial;
-            }
-
-            span{
-                color: #00C;
-            }
         </style>
     </head>
     <body>
-        <a href="../../index.html">Inicio</a><br/>
-        <div id="contenedor">
-            <p>
-                Localizacion Inicial (lat, lon): <br/>
-                <span id="iniLat">???</span>&deg;,<span id="iniLon">???</span>&deg;
-            </p>
-            <p>
-                Localizacion Actual (lat, lon): <br/>
-                <span id="actualLat">???</span>&deg;,<span id="actualLon">???</span>&deg;
-            </p>
-            <p>
-                Distancia desde el comienzo: <br/>
-                <span id="distancia"></span> km
-            </p>
-        </div>
+        
+        <section role="region" id="input-areas" data-position="right">
+            <header class="fixed">
+                <a id="btn-input-areas-back" href="../../index.html"><span class="icon icon-back">back</span></a>
+                <h1>Geolocalización</h1>
+            </header>
+            <article class="content scrollable header">
+            <div id="contenedor">
+                <p>
+                    Localizacion Inicial (lat, lon): <br/>
+                    <span id="iniLat">???</span>&deg;,<span id="iniLon">???</span>&deg;
+                </p>
+                <p>
+                    Localizacion Actual (lat, lon): <br/>
+                    <span id="actualLat">???</span>&deg;,<span id="actualLon">???</span>&deg;
+                </p>
+                <p>
+                    Distancia desde el comienzo: <br/>
+                    <span id="distancia"></span> km
+                </p>
+            </div>
+            </article>
+        </section>
+        
         <script>
             window.onload = function(){
                 

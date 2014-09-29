@@ -20,35 +20,14 @@
                     <label>Nombre</label><input type="text" id="nombre_input">
                 </p>
                 <p>
-                    <button onclick="javascript:guardar()">Guardar</button>    
-                    <button onclick="javascript:mostrar()">Mostrar</button>    
-                    <button onclick="javascript:eliminar()">Limpiar</button>  
+                    <button id="BtnGuardar">Guardar</button>    
+                    <button id="BtnMostrar">Mostrar</button>    
+                    <button id="BtnEliminar">Limpiar</button>  
                 </p>
                 <p>Nombre: <span id="nombre_span"></span></p>
             </article>
         </section>
-    
-        <script>
-            function guardar(){
-                nombre = document.getElementById("nombre_input").value
-                localStorage.setItem('nombre', nombre);
-            }
-            
-            function mostrar(){
-                if( localStorage.nombre ){
-                    nombre = localStorage.getItem('nombre');
-                    document.getElementById("nombre_span").innerHTML = nombre
-                }else{
-                    document.getElementById("nombre_span").innerHTML = "esta vacio"
-                }
-                
-            }
-            
-            function eliminar(){
-                localStorage.clear()
-                //localStorage.removeItem('nombre')
-            }
-        </script>
 
   </body>
+  <script src="app.js"></script>
 </html>

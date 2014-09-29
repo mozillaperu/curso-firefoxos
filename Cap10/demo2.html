@@ -2,28 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-	  <title>IndexedDB API - Curso de Firefox OS</title>
-	  <link rel="stylesheet" href="style.css" />
+	  <title>Contacts API - Curso de Firefox OS</title>
+    <link href="../../css/headers.css" rel="stylesheet" type="text/css">
+    <link href="../../css/lists.css" rel="stylesheet" type="text/css">
+    <link href="../../css/util.css" rel="stylesheet" type="text/css">
+    <link href="../../css/fonts.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
   </head>
   <body>
-    <a href="../../index.html">Inicio</a><br/>
-    <h1>Administración de contactos</h1>
-    <form action="#" id="FormAgregarContacto">
-      <label>Apellidos
-        <input type="text" name="apellidos" id="apellidos" />
-      </label>
-      <label>Nombres
-        <input type="text" name="nombres" id="nombres" />
-      </label>
-      <label>E-mail
-        <input type="email" name="correo" id="correo" />
-      </label>
-      <label>Teléfono
-        <input type="text" name="telefono" id="telefono" />
-      </label>
-      <input type="button" name="agregarContacto" id="agregarContacto" value="Agregar Contacto" />
-    </form>
-    <div id="showSysContactsResult"></div>
+    <section role="region" id="input-areas" data-position="right">
+        <header class="fixed">
+            <a id="btn-input-areas-back" href="../../index.html"><span class="icon icon-back">back</span></a>
+            <h1>Contacts API</h1>
+        </header>
+        <article class="content scrollable header">
+          <h1>Administración de contactos</h1>
+          <form action="#" id="FormAgregarContacto">
+            <label>Apellidos
+              <input type="text" name="apellidos" id="apellidos" />
+            </label><br>
+            <label>Nombres
+              <input type="text" name="nombres" id="nombres" />
+            </label><br>
+            <label>E-mail
+              <input type="email" name="correo" id="correo" />
+            </label><br>
+            <label>Teléfono
+              <input type="text" name="telefono" id="telefono" />
+            </label><br>
+            <input type="button" name="agregarContacto" id="agregarContacto" value="Agregar Contacto" />
+          </form>
+          <div id="showSysContactsResult"></div>
+        </article>
+    </section>
   </body>
   <script src="app2.js"></script>
 </html>

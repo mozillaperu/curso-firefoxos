@@ -6,4 +6,5 @@ Curso de Firefox OS
 ###Recursos
 
 * [Guia de Estilos de FirefoxOS](https://www.mozilla.org/en-US/styleguide/products/firefox-os/)
-* [Iconos en formato .svg](http://thenounproject.com/)
+* [Icono base obtenido de The Noun Project](http://thenounproject.com/term/fox/4144/)
+* [Más Iconos en formato .svg](http://thenounproject.com/)

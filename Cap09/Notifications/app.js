@@ -14,16 +14,27 @@ function showNotification()
   if ("Notification" in window)
   {
     var n = new Notification(title,options);
+    handleClick(n);
   }
   else if ("mozNotification" in navigator)
   { // FirefoxOS 1.1
     var notification = navigator.mozNotification.createNotification(title,options);
     notification.show();
+    handleClick(notification);
   }
   else
   { // Other browsers: do nothing
     alert(title + ": " + options.body);
   }
+}
+
+function handleClick(notification)
+{
+  notification.onclick = function() {
+    notification.close();
+    var div = document.getElementById("message-block");
+    div.innerHTML = "ui was updated";
+  };
 }
 
 document.querySelector('#showNotificationButton').addEventListener ('click', function () {

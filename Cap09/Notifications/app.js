@@ -18,7 +18,7 @@ function showNotification()
   }
   else if ("mozNotification" in navigator)
   { // FirefoxOS 1.1
-    var notification = navigator.mozNotification.createNotification(title,options);
+    var notification = navigator.mozNotification.createNotification(title,optionsBody,optionIcon);
     notification.show();
     handleClick(notification);
   }
